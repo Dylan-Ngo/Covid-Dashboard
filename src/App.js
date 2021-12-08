@@ -4,7 +4,7 @@ import CountrySelector from './components/CountrySelector';
 import { getCountries, getReportByCountry } from './components/apis';
 import Summary from './components/Summary';
 import Highlight from './components/Highlight';
-import { Container, Typography } from '@material-ui/core';
+import { Container, Link, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -101,14 +101,24 @@ const App = () => {
       <Typography variant='h4' component='h4' align='center' style={{'margin': 100 + 'px'}}>
       Country Wise Cases of COVID-19
       </Typography>
+
       <Typography>{moment().format('LLLL')}</Typography>
       <CountrySelector
         handleOnChange={handleOnChange}
         countries={countries}
         value={selectedCountryId}
       />
+
       <Highlight summary={summary} />
+
       <Summary countryId={selectedCountryId} report={report} />
+
+      <Typography align='center'>
+        <Link align='center' href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" target="_blank">
+          Source: Coronavirus COVID19 API
+        </Link>
+      </Typography>
+  
     </Container>
   );
 };

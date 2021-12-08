@@ -34,7 +34,7 @@ const initOptions = {
   },
   series: [
     {
-      name: 'Cases',
+      name: 'index',
       joinBy: ['hc-key', 'key'],
     },
   ],

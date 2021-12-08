@@ -5,7 +5,7 @@ import moment from 'moment';
 import { Button, ButtonGroup } from '@material-ui/core';
 
 const generateOptions = (data) => {
-  const categories = data.map((item) => moment(item.Date).format('MM/DD/YYYY'));
+  const dates = data.map((item) => moment(item.Date).format('MM/DD/YYYY'));
 
   return {
     chart: {
@@ -15,7 +15,7 @@ const generateOptions = (data) => {
       text: 'Total Confirmed Cases',
     },
     xAxis: {
-      categories: categories,
+      categories: dates,
       crosshair: true,
     },
     colors: ['#F3585B'],
@@ -23,9 +23,6 @@ const generateOptions = (data) => {
       min: 0,
       title: {
         text: null,
-      },
-      labels: {
-        align: 'right',
       },
     },
     tooltip: {
@@ -52,7 +49,7 @@ const generateOptions = (data) => {
   };
 };
 
-export default function LineChart({ data }) {
+const LineChart = ({ data }) => {
   const [options, setOptions] = useState({});
   const [reportType, setReportType] = useState('all');
   console.log({ data });
@@ -85,7 +82,9 @@ export default function LineChart({ data }) {
         aria-label='small outlined button group'
         style={{
           display: 'flex',
-          justifyContent: 'flex-end',
+          justifyContent: 'flex-start',
+          marginTop: '20px',
+          marginBottom: '20px',
         }}
       >
         <Button
@@ -111,3 +110,4 @@ export default function LineChart({ data }) {
     </>
   );
 }
+export default React.memo(LineChart);

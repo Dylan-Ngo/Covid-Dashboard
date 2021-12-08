@@ -9,8 +9,8 @@ const useStyles = makeStyles({
     if (props.type === 'recovered') return { borderLeft: '5px solid #28a745' };
     else return { borderLeft: '5px solid gray' };
   },
-  title: { fontSize: 18, marginBottom: 5 },
-  count: { fontWeight: 'bold', fontSize: 18 },
+  title: { fontSize: 18, marginBottom: 10 },
+  count: { fontWeight: 'bold', fontSize: 20 },
 });
 
 export default function HighlightCard({ title, count, type }) {
@@ -22,7 +22,7 @@ export default function HighlightCard({ title, count, type }) {
           {title}
         </Typography>
         <Typography variant='body2' component='span' className={classes.count}>
-          <CountUp end={count} separator=' ' duration={2} />
+          <CountUp end={count} separator=',' duration={2} />
         </Typography>
       </CardContent>
     </Card>
