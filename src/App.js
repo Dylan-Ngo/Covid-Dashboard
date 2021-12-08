@@ -94,7 +94,7 @@ const App = () => {
             Global Map & Stat
           </Button>
           <Button color='inherit' href="https://www.vaccines.gov/search/" target="_blank">
-            Vaccine
+            Get Vaccine
           </Button>
         </Toolbar>
       </AppBar>
