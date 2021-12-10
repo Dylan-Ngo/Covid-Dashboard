@@ -50,8 +50,6 @@ const App = () => {
       );
       getReportByCountry(selectedCountry.Slug).then((res) => {
         console.log('getReportByCountry', { res });
-        // remove last item = current date
-        res.data.pop();
         setReport(res.data);
       });
     }
