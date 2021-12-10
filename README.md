@@ -1,6 +1,15 @@
 # COVID-19 Country Wise Statistics and Charts
 
-## Live Demo: Coming soon
+> Dillon Go (Team lead)
+>
+> Evan Le
+>
+> Dylan Ngo
+>
+> Elnathan Yoon
+
+## [Live Demo:](https://coviddashboard-team2de.netlify.app/)
+   [https://coviddashboard-team2de.netlify.app/](https://coviddashboard-team2de.netlify.app/)
 
 ## Build and run the app locally
 1. Install Dependencies
