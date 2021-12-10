@@ -26,3 +26,6 @@
 3. The page will automatically be opened at:
 
     `http://localhost:3000`
+
+## COVID-19 World Map GitHub repository 
+   [https://github.com/Dylan-Ngo/Covid-Map](https://github.com/Dylan-Ngo/Covid-Map)
