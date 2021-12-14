@@ -29,3 +29,6 @@
 
 ## COVID-19 World Map GitHub repository 
    [https://github.com/Dylan-Ngo/Covid-Map](https://github.com/Dylan-Ngo/Covid-Map)
+
+## Team 2DE Presentation:
+   [Link to our presentation](https://www.youtube.com/watch?v=VMQLcDInNnk)
